@@ -1,0 +1,93 @@
+body {
+        margin: 0;
+        padding: 0;
+        background-color: #213d3c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This centers the content vertically */
+      }
+
+      .nav {
+        justify-content: center;
+        width: 100%;
+        background-color: #ffffff67;
+        top: 0;
+        position: fixed;
+        height: 60px;
+        z-index: 3; /* Ensure the navigation bar is on top */
+      }
+
+      .list {
+        display: inline;
+        border-right: 3px solid #213d3c;
+        padding-right: 5px;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .image-container {
+        width: 100%;
+        position: fixed;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .menu-container {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2; /* Place the table on top of the image */
+        margin-top: 1790px;
+      }
+      /* Added responsive CSS for table */
+      table {
+        width: 100%;
+        max-width: 400px; /* Adjusted the maximum width for better mobile display */
+        margin: 0 auto;
+        background: rgb(255, 255, 255);
+      }
+
+      td {
+        text-align: center;
+        color: #000000;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+        padding: 10px; /* Added padding for better spacing */
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .details {
+        font-weight: lighter;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        color: #9e0101;
+        font-weight: lighter;
+        font-size: 16px;
+        font-weight: bold;
+      }
