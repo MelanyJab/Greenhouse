@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Drinks</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /*page body styles*/
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #213d3c;
+      }
+
+      /* navigation bar*/
+      .nav {
+        justify-content: center;
+        width: 100%;
+        background-color: #ffffff67;
+        top: 0;
+        position: fixed;
+        height: 60px;
+        z-index: 3; /* Ensure the navigation bar is on top */
+      }
+
+      .list {
+        display: inline;
+        border-right: 3px solid #213d3c;
+        padding-right: 5px;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .drinkssect {
+        text-align: center;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.158);
+        padding: 5%;
+        margin-top: 100px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+        font-style: italic;
+      }
+
+      .image-container {
+        position: relative;
+        max-width: 100%; /* Ensure the image doesn't exceed the screen width */
+        text-align: center;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+      }
+
+      /* Added responsive CSS for table */
+      table {
+        width: 100%;
+        max-width: 400px; /* Adjusted the maximum width for better mobile display */
+        margin: 0 auto;
+        background: rgb(255, 255, 255);
+      }
+
+      td {
+        text-align: center;
+        color: #000000;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+        padding: 10px; /* Added padding for better spacing */
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .Title {
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: 35px;
+        font-weight: lighter;
+        letter-spacing: 0.3em;
+        background-color: rgba(255, 255, 255, 0.158);
+        padding: 5px;
+      }
+
+      .details {
+        font-weight: lighter;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        color: #9e0101;
+        font-weight: lighter;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .expandable {
+        cursor: pointer;
+      }
+
+      .content {
+        display: none;
+      }
+
+      /*for mobile */
+      @media (max-width: 767px) {
+        .menu-container,
+        .menu-container2,
+        .menu-container3,
+        .menu-container4,
+        .menu-container5 {
+          top: initial;
+          left: 0;
+          right: 0;
+          bottom: initial;
+        }
+
+        .content {
+          display: none;
+        }
+
+        .expandable {
+          cursor: pointer;
+          margin-top: 10px; /* Add some space between sections on mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div class="nav">
+      <ul>
+        <li class="list">
+          <a
+            style="
+              color: #213d3c;
+              text-decoration: none;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              font-size: 20px;
+              font-weight: bold;
+            "
+            href="menu.html"
+          >
+            Back
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="drinkssect">
+      Sip into Bliss! Double click on the titles below to quench your thirst:
+    </p>
+
+    <div class="expandable">
+      <h2 class="Title" onclick="toggleContent('drinks')">Drinks</h2>
+      <div class="content" id="drinks">
+        <div class="image-container">
+          <div class="menu-container">
+            <table>
+              <tr>
+                <td>
+                  <p
+                    style="
+                      font-size: 10px;
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      color: #213d3c;
+                      font-weight: lighter;
+                      font-style: italic;
+                      letter-spacing: 0.7em;
+                      margin: 0;
+                    "
+                  >
+                    greenhouse
+                  </p>
+                  <img src="/Images/drink5.jpeg" class="image" />
+                  <h1 class="title">REGULAR DRINKS</h1>
+                  <h2 class="price">3.50$</h2>
+
+                  <h1 class="title">COCKTAILS</h1>
+                  <h2 class="price">4.00$</h2>
+
+                  <h1 class="title">PREMIUM COCKTAILS</h1>
+                  <h2 class="price">6.00$</h2>
+
+                  <h1 class="title">RUSSIAN STANDARD</h1>
+                  <h2 class="price">4.00$</h2>
+
+                  <h1 class="title">SMIRNOFF</h1>
+                  <h2 class="price">3.50$</h2>
+
+                  <h1 class="title">STOLY RED</h1>
+                  <h2 class="price">4.00$</h2>
+
+                  <h1 class="title">VODKA KETEL ONE</h1>
+                  <h2 class="price">5:00$</h2>
+
+                  <h1 class="title">GREYGOOSE</h1>
+                  <h2 class="price">9.00$</h2>
+
+                  <h1 class="title">BELVERDE</h1>
+                  <h2 class="price">12.00$</h2>
+
+                  <h1 class="title">OLD LADY GIN</h1>
+                  <h2 class="price">3.50$</h2>
+
+                  <h1 class="title">GORDON'S</h1>
+                  <h2 class="price">4.00$</h2>
+
+                  <h1 class="title">BOMBAY</h1>
+                  <h2 class="price">5:50$</h2>
+
+                  <h1 class="title">HENDRICKS</h1>
+                  <h2 class="price">7:00$</h2>
+
+                  <h1 class="title">TENQUERAY</h1>
+                  <h2 class="price">5.20$</h2>
+
+                  <h1 class="title">CAPTAIN MORGAN W</h1>
+                  <h2 class="price">4.50$</h2>
+
+                  <h1 class="title">CAPTAIN MORGAN SPICED</h1>
+                  <h2 class="price">5.00$</h2>
+
+                  <h1 class="title">JOSE CUERVO WHITE</h1>
+                  <h2 class="price">4.80$</h2>
+
+                  <h1 class="title">JOSE CUERVO WHITE</h1>
+                  <h2 class="price">5:50$</h2>
+
+                  <h1 class="title">OAKHEART SPICE RUM</h1>
+                  <h2 class="price">4:80$</h2>
+
+                  <h1 class="title">DON JULIO TEQUILA</h1>
+                  <h2 class="price">10:00$</h2>
+
+                  <img src="/Images/drink3.jpeg" class="image" />
+                  <h1
+                    style="letter-spacing: 0.5em; font-size: 23px"
+                    class="title"
+                  >
+                    OUR SPECIAL COCKTAILS
+                  </h1>
+                  <br />
+                  <h1 class="title">- WHISKEY SUNSET -</h1>
+
+                  <h1 class="title">- KARMA THE DOG -</h1>
+
+                  <h1 class="title">- GREENHOUSE MARTINI -</h1>
+
+                  <h1 class="title">- SANGRIA BELLUCI -</h1>
+
+                  <h1 class="title">- ALOE O -</h1>
+
+                  <h1 class="title">- TEQUILA CACTUS -</h1>
+
+                  <h1 class="title">- STRONG APEROL -</h1>
+
+                  <h1 class="title">- ALMOND MILKYWAY -</h1>
+
+                  <h2 class="price">6.00$</h2>
+                  <br />
+                  <h1
+                    style="letter-spacing: 0.5em; font-size: 23px"
+                    class="title"
+                  >
+                    SHOTS
+                  </h1>
+                  <br />
+
+                  <h1 class="title">REGULAR SHOTS</h1>
+
+                  <h2 class="price">1.50$</h2>
+
+                  <h1 class="title">PREMIUM SHOTS</h1>
+
+                  <h2 class="price">2.00$</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="expandable">
+      <h2
+        style="margin-top: 5px"
+        class="Title"
+        onclick="toggleContent('whiskey')"
+      >
+        Whiskey
+      </h2>
+      <div class="content" id="whiskey">
+        <!-- Content for the Whiskey section -->
+        <div class="image-container">
+          <div class="menu-container2">
+            <table>
+              <tr>
+                <td>
+                  <p
+                    style="
+                      font-size: 10px;
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      color: #213d3c;
+                      font-weight: lighter;
+                      font-style: italic;
+                      letter-spacing: 0.7em;
+                      margin: 0;
+                    "
+                  >
+                    greenhouse
+                  </p>
+                  <img src="/Images/drink1.jpeg" class="image" />
+                  <h1 class="title">GLENBEY</h1>
+                  <h2 class="price">3.50$</h2>
+
+                  <h1 class="title">D&B</h1>
+                  <h2 class="price">4.00$</h2>
+
+                  <h1 class="title">GAMESON</h1>
+                  <h2 class="price">4.50$</h2>
+
+                  <h1 class="title">JACK DANIELS</h1>
+                  <h2 class="price">5.00$</h2>
+
+                  <h1 class="title">RED LABEL</h1>
+                  <h2 class="price">4.50$</h2>
+
+                  <h1 class="title">BLACK LABEL</h1>
+                  <h2 class="price">6.50$</h2>
+
+                  <h1 class="title">GLENFIDDICH 12</h1>
+                  <h2 class="price">7:00$</h2>
+
+                  <h1 class="title">GLENNOFIICH 15</h1>
+                  <h2 class="price">9.00$</h2>
+
+                  <h1 class="title">OLD PAR</h1>
+                  <h2 class="price">13.00$</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="expandable">
+      <h2 style="margin-top: 5px" class="Title" onclick="toggleContent('wine')">
+        Wine
+      </h2>
+      <div class="content" id="wine">
+        <!-- Content for the Wine section -->
+        <div class="image-container">
+          <div class="menu-container3">
+            <table>
+              <tr>
+                <td>
+                  <p
+                    style="
+                      font-size: 10px;
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      color: #213d3c;
+                      font-weight: lighter;
+                      font-style: italic;
+                      letter-spacing: 0.7em;
+                      margin: 0;
+                    "
+                  >
+                    greenhouse
+                  </p>
+                  <img src="/Images/drink4.jpeg" class="image" />
+                  <h1 class="title">BATROUN MOUNTAINS: RED/WHITE/ROSE GLASS</h1>
+                  <h2 class="price">2.25$</h2>
+
+                  <h1 class="title">BATROUN MOUNTAINS: SYRAH BOTTLE</h1>
+                  <h2 class="price">14.00$</h2>
+
+                  <h1 class="title">KSARA: RED/WHITE/ROSE GLASS</h1>
+                  <h2 class="price">2.50$</h2>
+
+                  <h1 class="title">SUNSET/BLANC DE BLANC: BOTTLE</h1>
+                  <h2 class="price">14.50$</h2>
+
+                  <h1 class="title">SUNSET/BLANC DE BLANC: BOTTLE 0.75 CL</h1>
+                  <h2 class="price">7.50$</h2>
+
+                  <h1 class="title">EXIR ALTITUDE: RED/WHITE/ROSE BOTTLE</h1>
+                  <h2 class="price">20.00$</h2>
+
+                  <h1 class="title">
+                    EXIR GRAND RESERVE: RED/WHITE/ROSE BOTTLE
+                  </h1>
+                  <h2 class="price">29:00$</h2>
+
+                  <h1 class="title">EXIR RESERVE DU COUVENT: 0.75 CL BOTTLE</h1>
+                  <h2 class="price">8.00$</h2>
+
+                  <h1 class="title">EXIR LE PRIEURE: 0.75 CL BOTTLE</h1>
+                  <h2 class="price">8.00$</h2>
+
+                  <h1 class="title">FRIZANTE</h1>
+                  <h2 class="price">20.00$</h2>
+
+                  <h1 class="title">ASTORIA TREVISO</h1>
+                  <h2 class="price">70.00$</h2>
+
+                  <h1 class="title">PICCINI PROSECO</h1>
+                  <h2 class="price">28:00$</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="expandable">
+      <h2 style="margin-top: 5px" class="Title" onclick="toggleContent('beer')">
+        Beer
+      </h2>
+      <div class="content" id="beer">
+        <!-- Content for the Beer section -->
+
+        <div class="menu-container4">
+          <table>
+            <tr>
+              <td>
+                <p
+                  style="
+                    font-size: 10px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: #213d3c;
+                    font-weight: lighter;
+                    font-style: italic;
+                    letter-spacing: 0.7em;
+                    margin: 0;
+                  "
+                >
+                  greenhouse
+                </p>
+
+                <h1 class="title">ALMAZA</h1>
+                <h2 class="price">1.85$</h2>
+
+                <h1 class="title">DARK ALMAZA</h1>
+                <h2 class="price">2.00$</h2>
+
+                <h1 class="title">LIGHT ALMAZA</h1>
+                <h2 class="price">2.00$</h2>
+
+                <h1 class="title">HEINEKEN</h1>
+                <h2 class="price">2.50$</h2>
+
+                <h1 class="title">CORONA</h1>
+                <h2 class="price">3.00$</h2>
+
+                <h1 class="title">BEIRUT</h1>
+                <h2 class="price">1.50$</h2>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="expandable">
+      <h2
+        style="margin-top: 5px"
+        class="Title"
+        onclick="toggleContent('softdrink')"
+      >
+        Soft Drinks
+      </h2>
+      <div class="content" id="softdrink">
+        <!-- Content for the Soft Drinks section -->
+        <div class="image-container">
+          <div class="menu-container5">
+            <table>
+              <tr>
+                <td>
+                  <p
+                    style="
+                      font-size: 10px;
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      color: #213d3c;
+                      font-weight: lighter;
+                      font-style: italic;
+                      letter-spacing: 0.7em;
+                      margin: 0;
+                    "
+                  >
+                    greenhouse
+                  </p>
+
+                  <h1 class="title">S WATER</h1>
+                  <h2 class="price">0.75$</h2>
+
+                  <h1 class="title">DETOX WATER</h1>
+                  <h2 class="price">1.50$</h2>
+
+                  <h1 class="title">SOFT DRINKS</h1>
+                  <h2 class="price">1.50$</h2>
+
+                  <h1 class="title">FRESH LEMONADE</h1>
+                  <h2 class="price">2.00$</h2>
+
+                  <h1 class="title">MINTED/STRAWBERRY LEMONADE</h1>
+                  <h2 class="price">2.50$</h2>
+
+                  <h1 class="title">FRESH ORANGE</h1>
+                  <h2 class="price">2.00$</h2>
+
+                  <h1 class="title">ENERGIE DRINK</h1>
+                  <h2 class="price">1:50$</h2>
+
+                  <h1 class="title">PERRIER</h1>
+                  <h2 class="price">2.00$</h2>
+
+                  <h1 class="title">TONIC/SODA</h1>
+                  <h2 class="price">1.50$</h2>
+
+                  <h1 class="title">REDBULL</h1>
+                  <h2 class="price">2.00$</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      function toggleContent(sectionId) {
+        const content = document.getElementById(sectionId);
+        content.style.display =
+          content.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
