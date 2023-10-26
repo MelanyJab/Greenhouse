@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drinks</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* Page body styles */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #213d3c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This centers the content vertically */
+      }
+
+      .nav {
+        justify-content: center;
+        width: 100%;
+        background-color: #ffffff67;
+        top: 0;
+        position: fixed;
+        height: 60px;
+        z-index: 3; /* Ensure the navigation bar is on top */
+      }
+
+      .list {
+        display: inline;
+        border-right: 3px solid #213d3c;
+        padding-right: 5px;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .image-container {
+        position: relative;
+        max-width: 100%; /* Ensure the image doesn't exceed the screen width */
+        text-align: center;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+      }
+
+      .menu-container {
+        position: absolute;
+        top: 1750px; /* Adjusted the top position to provide space for the nav bar */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2; /* Place the table on top of the image */
+      }
+
+      /* Added responsive CSS for table */
+      table {
+        width: 100%;
+        max-width: 400px; /* Adjusted the maximum width for better mobile display */
+        margin: 0 auto;
+        background: rgb(255, 255, 255);
+      }
+
+      td {
+        text-align: center;
+        color: #000000;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: italic;
+        padding: 10px; /* Added padding for better spacing */
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .details {
+        font-weight: lighter;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        color: #9e0101;
+        font-weight: lighter;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div class="nav">
+      <ul>
+        <li class="list">
+          <a
+            style="
+              color: #213d3c;
+              text-decoration: none;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              font-size: 20px;
+              font-weight: bold;
+            "
+            href="menu.html"
+          >
+            Back
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="image-container">
+      <img style="padding-top: 90px" class="image" src="/menu images/8.jpg" />
+      <div class="menu-container">
+        <table>
+          <tr>
+            <td>
+              <p
+                style="
+                  font-size: 10px;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                  color: #213d3c;
+                  font-weight: lighter;
+                  font-style: italic;
+                  letter-spacing: 0.7em;
+                  margin: 0;
+                "
+              >
+                greenhouse
+              </p>
+              <img src="/Images/drink4.jpeg" class="image" />
+              <h1 class="title">REGULAR DRINKS</h1>
+              <h2 class="price">3.50$</h2>
+
+              <h1 class="title">COCKTAILS</h1>
+              <h2 class="price">4.00$</h2>
+
+              <h1 class="title">PREMIUM COCKTAILS</h1>
+              <h2 class="price">6.00$</h2>
+
+              <h1 class="title">RUSSIAN STANDARD</h1>
+              <h2 class="price">4.00$</h2>
+
+              <h1 class="title">SMIRNOFF</h1>
+              <h2 class="price">3.50$</h2>
+
+              <h1 class="title">STOLY RED</h1>
+              <h2 class="price">4.00$</h2>
+
+              <h1 class="title">VODKA KETEL ONE</h1>
+              <h2 class="price">5:00$</h2>
+
+              <h1 class="title">GREYGOOSE</h1>
+              <h2 class="price">9.00$</h2>
+
+              <h1 class="title">BELVERDE</h1>
+              <h2 class="price">12.00$</h2>
+
+              <h1 class="title">OLD LADY GIN</h1>
+              <h2 class="price">3.50$</h2>
+
+              <h1 class="title">GORDON'S</h1>
+              <h2 class="price">4.00$</h2>
+
+              <h1 class="title">BOMBAY</h1>
+              <h2 class="price">5:50$</h2>
+
+              <h1 class="title">HENDRICKS</h1>
+              <h2 class="price">7:00$</h2>
+
+              <h1 class="title">TENQUERAY</h1>
+              <h2 class="price">5.20$</h2>
+
+              <h1 class="title">CAPTAIN MORGAN W</h1>
+              <h2 class="price">4.50$</h2>
+
+              <h1 class="title">CAPTAIN MORGAN SPICED</h1>
+              <h2 class="price">5.00$</h2>
+
+              <h1 class="title">JOSE CUERVO WHITE</h1>
+              <h2 class="price">4.80$</h2>
+
+              <h1 class="title">JOSE CUERVO WHITE</h1>
+              <h2 class="price">5:50$</h2>
+
+              <h1 class="title">OAKHEART SPICE RUM</h1>
+              <h2 class="price">4:80$</h2>
+
+              <h1 class="title">DON JULIO TEQUILA</h1>
+              <h2 class="price">10:00$</h2>
+
+              <img src="/Images/drink3.jpeg" class="image" />
+              <h1 style="letter-spacing: 0.5em; font-size: 23px" class="title">
+                OUR SPECIAL COCKTAILS
+              </h1>
+              <br />
+              <h1 class="title">- WHISKEY SUNSET -</h1>
+
+              <h1 class="title">- KARMA THE DOG -</h1>
+
+              <h1 class="title">- GREENHOUSE MARTINI -</h1>
+
+              <h1 class="title">- SANGRIA BELLUCI -</h1>
+
+              <h1 class="title">- ALOE O -</h1>
+
+              <h1 class="title">- TEQUILA CACTUS -</h1>
+
+              <h1 class="title">- STRONG APEROL -</h1>
+
+              <h1 class="title">- ALMOND MILKYWAY -</h1>
+
+              <h2 class="price">6.00$</h2>
+              <br />
+              <h1 style="letter-spacing: 0.5em; font-size: 23px" class="title">
+                SHOTS
+              </h1>
+              <br />
+
+              <h1 class="title">REGULAR SHOTS</h1>
+
+              <h2 class="price">1.50$</h2>
+
+              <h1 class="title">PREMIUM SHOTS</h1>
+
+              <h2 class="price">2.00$</h2>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
